@@ -1,0 +1,329 @@
+/*COnfiguração das Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,900&display=swap');
+
+/*COnfiguração das cores*/
+:root{
+    --corl:#6b3fa0;
+    --cor2:#b19cd9;
+    --cor3:#FFFFFF;
+    --cor4:#000000;
+}
+
+/*Configuração dos Navegadores*/
+*{
+    font-family: 'roboto', san-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration:none;
+    list-style: none;
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+/*Configuração do Body*/
+body{
+    background-color: var(--cor3);
+}
+
+header{
+    max-width: 95%;
+    height: auto;
+    margin: 0 auto;
+    background-color:var(--corl);
+    text-align: center; 
+    border-radius: 0px 0px 12px 12px;   
+    padding-top: 1rem;
+    box-shadow:0px 8px 4px var(--cor2);
+}
+
+nav li{
+    display:inline-block;
+    margin: 2rem 4rem;
+}
+
+nav a{
+    color: var(--cor3);
+}
+
+nav a:hover{
+    color:var(--cor4);
+    border-bottom: 4px solid;
+}
+
+/*------Configurações Main--------*/
+
+main{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*-----------Configurações Banner-------------------*/
+
+.nivoSlider{
+   max-width: 95%;
+    margin: 0 auto; 
+    text-align: center;
+
+}
+
+.nivoSlider img{
+  padding: 10px;
+
+} 
+
+/*-----------Formatação dos Cards------------*/
+
+.barra{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--cor2);
+    width: 100%;
+    hyphens:70vh ;
+    padding-top: 2%;
+}
+
+.pecas h2{
+    font-weight: 700;
+    color:var(--cor4);
+    letter-spacing: 2px;
+    padding-top: 2%;
+}
+
+.pecas p{
+    font-size: 1.2rem;
+    color: var(--cor3);
+    font-weight: 700;
+    padding-top: 3%;
+}
+
+.pecas a{
+    color:var(--corl);
+    font-size: 0.8rem;
+}
+
+/*----------Rodape-----------*/
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:var(--corl);
+    color:var(--cor3) ;
+    padding-top: 2%;
+    text-align: center;
+    
+}
+
+.rodape a{
+    font-size: 0.8rem;
+    background-color: var(--cor3);
+
+}
+
+.rodape img{
+    padding: 5%;
+}
+
+/*--------------------Pagina cadastro---------------------*/
+
+.cadastro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--cor2);
+    margin: 2%;
+    width: 95%;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.cad{
+    width:80% ;
+}
+
+.cad h1{
+    font-size: 1.6rem;
+    text-align: center;
+    color:var(--cor3) ;
+    font-weight: 700;
+    margin-bottom: 2%;
+}
+
+#cadastro input[type="text"], input[type="email"], input[type=password]{
+    width: 400px;
+    height: 50px;
+    color: var(--cor4);
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 1%;
+}
+
+#cadastro input[type="submit"]{
+    width: 250px;
+    height: 50px;   
+    background-color: var(--corl);
+    color:var(--cor4);
+    border: none;
+    margin-top: 3%;
+    border-radius: 10px;
+}
+
+#cadastro input[type="submit"]:hover{
+    background-color: var(--cor3);
+    cursor: pointer;
+}
+
+
+/*--------------------Configuração Entrar---------------------*/
+
+.login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: var(--cor2);
+    margin: 2% auto;
+    width: 95%;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.logar{
+    width: 80%;
+}
+
+.logar h1{
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--cor3);
+    font-weight: 700;
+    margin-bottom: 3%;
+}
+
+.logar input[type="submit"]{
+    width: 250px;
+    height: 50px;
+    background-color: var(--corl);
+    border: none;
+    margin-top: 3%;
+    border-radius: 10px;
+    
+}
+
+.logar input[type="submit"]:hover{
+    background-color: var(--cor3);
+    cursor: pointer;
+}
+
+/*---------------Area do usuario------------*/  
+
+.barra_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor3);
+    width: 95%;
+    margin: 2% auto;
+    padding: 1% 5%;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.barra h1{
+    color: var(--cor3);
+}
+
+.barra a{
+    color: var(--cor3);
+
+}
+
+.usuario{
+    width: 95%;
+    height: 500px;
+    background-color: var(--cor2);
+    margin: -2% auto;
+    padding: 2%;
+    text-align: center;
+}
+
+.usuario h2{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--cor4);
+}
+
+
+.usuario p{
+    color: var(--cor3);
+}
+
+/*-------------------Cadastro Produto----------------------*/
+
+.cadastrar{
+    width: 80%;
+    margin: 0px 160px;
+    box-sizing: border-box;
+    display: block;
+    justify-content: center;
+    align-items: center;
+   text-align: center;
+    padding-top: 2%;
+    background-color: var(--cor2);
+}
+
+.cadastrar h1{
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--cor3);
+    font-weight: 700;
+    margin-bottom: 3%;
+}
+
+#cadastrar input[type="text"], input[type="email"], input[type=password]{
+    width: 400px;
+    height: 50px;
+    color: var(--cor4);
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 1%;
+}
+
+/*-------produto-----------*/
+
+.produto{
+    width: 80%;
+    margin: 0px 160px;
+    box-sizing: border-box;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 2%;
+}
+
+
+.produto h2{
+    
+        font-size: 1.3rem;
+        font-weight: 700;
+        color:var(--cor4);
+        letter-spacing: 2px;
+        padding-top: 2%;
+
+}
+
+.produto p{
+    font-size: 1.0rem;
+    color: var(--cor4);
+    font-weight: 700;
+    padding-top: 3%;
+
+}
+
+.produto img{
+    padding: 2%;
+}
